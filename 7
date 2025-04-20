@@ -1,0 +1,24 @@
+quantity=int(input())
+if quantity<100:
+  lst=quantity%10
+elif 1000>quantity>100:
+    lst=quantity%100
+if quantity>=5 and quantity%5==0 or quantity<=5 and quantity%7==0:
+    print("да")
+elif quantity>7 and lst==7 or quantity>7 and lst==2 and (quantity-7)%5==0:
+    print("да")
+elif quantity>14 and lst==4 and (quantity-14)%5==0:
+    print("да")
+elif quantity>21 and lst==1 and (quantity-21)%5==0:
+    print("да")
+elif quantity>28 and lst==8 and (quantity-28)%5==0:
+    print("да")
+elif quantity>49 and lst==9 and (quantity-49)%5==0:
+    print("да")
+elif quantity>56 and lst==4 and (quantity-56)%5==0:
+    print("да")
+elif quantity>63 and lst==3 and (quantity-63)%5==0:
+    print("да")
+else:
+    print("нет")
+    
