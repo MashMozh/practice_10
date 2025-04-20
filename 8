@@ -1,0 +1,13 @@
+begin = int(input())
+numbers = []
+for i in range (0, 10):
+    numbers.append (i)
+for j in range (10, 100):
+    numbers.append (j // 10)
+    numbers.append (j % 10)
+for a in range (100, 201):
+    numbers.append ((a // 10) // 10)
+    numbers.append ((a // 10) % 10)
+    numbers.append (a % 10)
+result = numbers[begin-1]
+print(result)
